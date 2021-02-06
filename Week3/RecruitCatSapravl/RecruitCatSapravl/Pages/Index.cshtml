@@ -1,0 +1,142 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+    <img src="~/css/Images/Title3.jpg" class="rounded" height="120" width="1020" alt="Title">
+</div>
+<div class="text-center" style="padding:25px 16px 4px 16px">
+    <h2><u>About Us</u></h2>
+</div>
+<div class="m-5">
+    <p class="font-italic">
+        We are Master recruiters a technical staffing company / agency.
+        We understand the recruitment marketplace in the United States of America and recruit across all technical levels & specialties.
+        Our services are catered to all types of businesses and technologies accross various Industries.
+        Our staffing agencies will help find capable and skilled candidates for you quickly.
+
+        Our recruiters located across all major cities in United States can help in filling
+        positions that are hard to fill on your own. For staffing needs, contact us! at your neared office location.
+        Master recruiting agency and staffing company with experienced recruiters that are ready to respond to all
+        of your technical staffing needs.
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col order-0">
+                Contact Us At
+            </div>
+            <div class="col order-sm-1">
+                Address : 19 N Mcmileinge Street<br />
+                Cincinnati, Ohio 45267
+            </div>
+            <div class="col order-sm-2">
+                Ph no : 513-000-0000
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="padding:25px 16px 4px 16px">
+        <h2><u>Services</u></h2>
+    </div>
+    <div class="row">
+        <div class="card" style="width: 16rem; margin-left: 100px">
+            <img src="~/css/Images/Tech.jpg" class="rounded card-img-top" height="200" alt="tech">
+            <div class="card-body">
+                <h5 class="card-title">Technical Staffing Requirement</h5>
+                <h6 class="card-subtitle mb-2 text-muted">All the resources proficient in technical Fields</h6>
+                <p class="card-text"></p>
+                <a href="#" class="card-link">More Info</a>
+            </div>
+        </div>
+        <div class="card" style="width: 16rem; margin-left: 40px">
+            <img src="~/css/Images/Non-tech.jpg" class="rounded card-img-top" height="200" alt="non-tech">
+            <div class="card-body">
+                <h5 class="card-title">Non-Technical Staffing Requirement</h5>
+                <h6 class="card-subtitle mb-2 text-muted">All the resources proficient in non-technical Fields</h6>
+                <p class="card-text"></p>
+                <a href="#" class="card-link">More Info</a>
+            </div>
+        </div>
+        <div class="card" style="width: 16rem; margin-left: 40px">
+            <img src="~/css/Images/exec.jpg" class="rounded card-img-top" height="200" alt="exec">
+            <div class="card-body">
+                <h5 class="card-title">Executive Staffing Requirement</h5>
+                <h6 class="card-subtitle mb-2 text-muted">All the resources proficient in Management</h6>
+                <p class="card-text"></p>
+                <a href="#" class="card-link">More Info</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="padding:25px 16px 4px 16px">
+        <h2><u>Industries We Specialize In</u></h2>
+    </div>
+    <div class="bg-light">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Sr No</th>
+                    <th scope="col">Industry</th>
+                    <th scope="col">Point of Contact</th>
+                    <th scope="col">Contact Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Information Technology</td>
+                    <td><a asp-page="/OurTeam">Vipul Sapra</a></td>
+                    <td>513-001-0001</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Manufacturing</td>
+                    <td><a asp-page="/OurTeam">Jhonny Gutentag</a></td>
+                    <td>513-002-0002</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Finance</td>
+                    <td><a asp-page="/OurTeam">Peter Andrews</a></td>
+                    <td>513-003-0003</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center" style="padding:25px 16px 4px 16px">
+        <h2><u>Testimonials</u></h2>
+    </div>
+    <div class="row">
+        <div class="card bg-light mb-3" style="max-width: 18rem; margin-left:40px">
+            <div class="card-header">Information Technology</div>
+            <div class="card-body">
+                <p class="card-text">Mater recruiters have been a valuable parners in our business Success.</p>
+                <footer class="blockquote-footer"><strong>Jacob J </strong><cite title="Source Title">    COE of IT Kings</cite></footer>
+            </div>
+        </div>
+        <div class="card bg-light mb-3" style="max-width: 18rem; margin-left:40px">
+            <div class="card-header">Manufacturing</div>
+            <div class="card-body">
+                <p class="card-text">Our Recruiting costs are down by 20%, since enrolling with Master Recruiters</p>
+                <footer class="blockquote-footer"><strong>Megan Paul </strong><cite title="Source Title">   President of Great Manufacturing</cite></footer>
+            </div>
+        </div>
+        <div class="card bg-light mb-3" style="max-width: 18rem; margin-left:40px">
+            <div class="card-header">Finance</div>
+            <div class="card-body">
+                <p class="card-text">Mater recruiters have been a valuable parners in our business Success.</p>
+                <footer class="blockquote-footer"><strong>Prabhu deva </strong><cite title="Source Title">    CEO of Urvashi Finance House</cite></footer>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="padding:25px 16px 4px 16px">
+        <h2><u>How To Enroll?</u></h2>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item"><strong>Three Simple Steps</strong></li>
+
+
+        <li class="list-group-item list-group-item-warning"><a href=#>STEP 1 : Fill in Your Company Details</a></li>
+        <li class="list-group-item list-group-item-primary"><a href=#>STEP 2 : Upload your Requirements Document</a></li>
+        <li class="list-group-item list-group-item-success">STEP 3 : Wait for Recruiting Consultant to get back to you within 3 working Days</li>
+    </ul>
+    </div>
