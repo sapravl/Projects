@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,6 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using RecruitCatSapravl.Data;
+using Gtt.Uc.EntityFramework;
 
 namespace RecruitCatSapravl
 {
@@ -23,6 +26,8 @@ namespace RecruitCatSapravl
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddGttMem<RecruitCatSapravlContext>("ca7e0144-ff46-4d04-ba8f-7fd075648ce0");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
